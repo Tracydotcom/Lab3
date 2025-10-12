@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39,39,39,0.4);
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 1), transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    font-family: 'Cinzel', 'serif';
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.nav-menu ul li :hover,
+.nav-menu ul li :hover.active{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+.nav-button .btn{
+    width: 200px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.nav-button .btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+.nav-button .btn:active{
+    background: white;
+    color: black;
+    transform: scale(0.97);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container .leftpanel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.leftpanel .logo{
+    font-size: 30px;
+}
+
+.text-sci h2{
+    font-size: 40px;
+    line-height: 1;
+}
+
+.text-sci h2 span{
+    font-size: 25px;
+}
+
+.text-sci p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.container .rightpanel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    backdrop-filter: blur(20px);
+}
+
+.right-btn {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    transition: .3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    text-shadow: 4px 4px 15px rgba(0,0,0,0.6); 
+}
+
+.right-btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.rightpanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+
+.rightpanel-content {
+    display: flex;    
+    flex-direction: column;     
+    gap: 40px;             
+    align-items: center;   
+}
+
+.choose {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    text-shadow: 4px 4px 15px rgba(0,0,0,0.6); 
+}
+
+
